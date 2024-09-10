@@ -1,1 +1,1 @@
-# ts-react-tailwindcss-sandbox
+# React + TypeScript + Vite

@@ -1,0 +1,27 @@
+{
+    "name": "TypeScript React TailwindCSS",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {}
+    },
+    "forwardPorts": [3000],
+    "postCreateCommand": "npm install",
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "bradlc.vscode-tailwindcss",
+          "dsznajder.es7-react-js-snippets"
+        ]
+      }
+    },
+    "containerEnv": {
+      "NODE_ENV": "development"
+    },
+    "remoteUser": "node",
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "postStartCommand": "npm run dev"
+  }
